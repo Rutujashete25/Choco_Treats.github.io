@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <!--Header section starts here-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Choco Treats</a>
+            
+            <div class="navbar-menu">
+              <a href="index.html">Home</a>
+              <a href="products.html">Our Products</a>
+              <a href="Blogs.html">Blogs</a>
+              <a href="about.html">About</a>
+             
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact">
+      <div class="content1">
+        <h2>Let's Get In Touch</h2>
+        <p>Your response makes us improve daily. Thank you for writing to us Your response makes us improve daily. Thank you for writing to us Your response makes us improve daily. Thank you for writing to us Your response makes us improve daily. Thank you for writing to us Your response makes us improve daily. Thank you for writing to us</p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+           <div class="box">
+             <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>    
+             <div class="text">
+               <h3>Address</h3>
+               <p>Choco Treats,<br> Dharampeth square,<br> Nagpur 440056</p>
+              </div> 
+            </div>  
+            
+            <div class="box">
+              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>    
+              <div class="text">
+                <h3>Phone</h3>
+                <p>123-456-789</p>
+              </div>
+          </div>
+
+          <div class="box">
+            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>    
+            <div class="text">
+              <h3>Email</h3>
+              <p>ChocoTreats12@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactform">
+          <span class="message"></span>
+          <form id="contact-form">
+            <h2>Send Message</h2>
+            <div class="inputbox">
+              <label>Full Name</label>
+              <input type="text" name="" required="required">
+              
+            </div>
+            <div class="inputbox">
+              <label>Email</label>
+              <input type="text" name="" required="required">
+              
+            </div>
+
+            <div class="inputbox">
+              <label>Type Your Message</label>
+              <textarea required="required"></textarea>
+              
+            </div>
+            <div class="inputbox">
+              <input type="submit" name="" value="send">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <hr style="margin-top: 60px;">
+    <footer class="footer">
+        <div class="container2">
+            <div class="row1">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate program</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">Return</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online Shop</h4>
+                    <ul>
+                        <li><a href="#">chocolate Box</a></li>
+                        <li><a href="#">Customize Gifts</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+   
+
+
+    <!--script section-->
+    <script>
+      $(function(){
+        $("#postresult").text("");
+    $("#contact-form").submit(function(e){
+        e.preventDefault();
+        $(".message").text("Thank you! We will be in touch soon.");
+
+    });
+  });
+    </script>
+    </body>
+    </html>

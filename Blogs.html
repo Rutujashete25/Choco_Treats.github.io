@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Section</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!--Header section starts here-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Choco Treats</a>
+            
+            <div class="navbar-menu">
+              <a href="index.html">Home</a>
+              <a href="products.html">Our Products</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+        <!---------Blog section starts here-->
+        <section id="blog">
+            <div class="blog-heading">
+                <h1>Our Blogs</h1>
+            </div>
+            <article id="blog-container">
+                <div class="blog_1">
+                    <img src="Images/Origin_choc.png">
+                    <h2>Origin Of Chocolates!</h2>
+                    <p id="p4">Chocolate's 4,000-year history began in ancient Mesoamerica, present day Mexico. </p>
+                    <button id="B1">Read More</button>
+                </div>
+                <div class="blog_1">
+                    <img src="Images/history_belgian.jpg">
+                    <h2>Famous City for chocolates in the World!</h2>
+                    <p id="p5"><b>Brussels, Belgium</b> If you are with a sweet tooth, definitely visit the capital and largest city of Belgium.  </p>
+                    <button id="B2">Read More</button>
+                </div>
+                <div class="blog_1">
+                    <img src="Images/ff.jpg">
+                    <h2>Fun Facts About Chocolates!</h2>
+                    <p id="p6">Cacao beans were so valuable to early Mesoamericans that they were used as currency.</p>  
+                        <button id="B3">Read More</button>    
+                </div>
+
+
+
+            </article>
+
+            <script>
+                $(document).ready(function(){  
+                 $('#B1').click(function(){
+                $('#p4').text("Chocolate's 4,000-year history began in ancient Mesoamerica, present day Mexico. It's here that the first cacao plants were found. The Olmec, one of the earliest civilizations in Latin America, were the first to turn the cacao plant into chocolate. They drank their chocolate during rituals and used it as medicine.");
+                });
+
+         $('#B2').click(function(){
+          $('#p5').text("<b>Brussels, Belgium</b> If you are with a sweet tooth, definitely visit the capital and largest city of Belgium. The place is known as the ‘Chocolate Capital of the World’. There are many amazing places to buy chocolate in Brussels as the city is famous for its creative chocolates and dotted with chocolate shops. In fact, the density of chocolate shops in this city is higher than any other place across the globe. On your visit to Brussels, don’t forget to miss the Musée du Cacao et du Chocolat (Museum of Cocoa and Chocolate).");
+         });
+
+         $('#B3').click(function(){
+          $('#p6').text("Cacao beans were so valuable to early Mesoamericans that they were used as currency.Worldwide, 40 million to 50 million people depend upon cocoa for their livelihood.Spanish royalty gave cakes of cacao in their dowries.It takes two to four days to make a single-serving chocolate bar.Some cacao trees are more than 200 years old, but most give marketable cocoa beans for only the first 25 years.S Through some programs supported by industry and partners including foundations and governments, farmers are now earning between 20 percent and 55 percent more from their crops Most cocoa farms are not owned by the companies that make chocolate.");
+         });
+
+        });
+
+       
+
+            </script>
+        </section>
+
+    </header> 
+    <hr style="margin-top: 60px;">
+        <footer class="footer">
+            <div class="container2">
+                <div class="row1">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate program</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online Shop</h4>
+                        <ul>
+                            <li><a href="#">chocolate Box</a></li>
+                            <li><a href="#">Customize Gifts</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            
+        
+        
+        
+    
+</body>    
+</html>

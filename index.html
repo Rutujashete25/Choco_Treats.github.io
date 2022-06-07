@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco Treats</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+    $(document).ready(function(){  
+        $('button').click(function(){
+          $('#para').text("Your career is like a box of chocolates - you never know what you're goingto get.But everything you get is going to teach you something along the way and make you the person you are today.Wanna be always happy? Always carry some chocolate with you. also stressed spelled backwords is dessert so why wait more Try pur authentic chocolates for you and your loved ones.");
+         });
+        });
+    </script>     
+  
+</head>
+<body>
+    <!--Header section starts here-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Choco Treats</a>
+            
+            <div class="navbar-menu">
+              <!--<a href="#">HOME</a>-->
+              <a href="products.html">Our Products</a>
+              <a href="Blogs.html">Blogs</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header> 
+    <div class="slideshow-container">
+        
+       <div class="mySlides">
+        <img src="Images/woman_grabbing_chocolate_.png" style="width:100%">
+         <div class="text1">Drool Over This Yummy Chocolates</div>
+       </div>
+
+        <div class="mySlides">
+          <img  src="Images/discount.png" style="width:100%">
+          <div class="text1">Grab Now Only for Limited Time</div>
+        </div>
+        
+        
+
+        <div class="mySlides">
+          <img src="Images/newbanner1.jpg" style="width:100%">
+          <div class="text1">Unlimited Categories To Explore</div>
+        </div>
+        
+        
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+        <section id="home">
+            <div class="content">
+                <div class="description">
+                    <h1>Delight In Every Bite</h1>
+                    <p id="para">"Your career is like a box of chocolates - you never know what you're going 
+                    to get.But everything you get is going to teach you something along the way and make 
+                    you the person you are today."<br>
+                    “Wanna be always happy? Always carry some chocolate with you ."</p>
+                
+                    <button>Learn More</button>
+                </div>
+                <img src="Images/pexels-ali-rashidi-9419469.jpg">
+            </div>
+        </section>
+        <hr style="margin-top: 60px;">
+        <footer class="footer">
+            <div class="container2">
+                <div class="row1">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate program</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online Shop</h4>
+                        <ul>
+                            <li><a href="#">chocolate Box</a></li>
+                            <li><a href="#">Customize Gifts</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Javascript used for slide show-->
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+          function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+           
+    </script>
+            
+   
+      
+</body>
+</html>
