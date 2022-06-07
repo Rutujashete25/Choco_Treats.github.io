@@ -106,10 +106,11 @@
   }
   /* Caption text */
 .text1 {
-    color: #23fafa;
+    color: #020606;;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
+    font-weight:500;
     bottom: 8px;
     width: 100%;
     text-align: center;
